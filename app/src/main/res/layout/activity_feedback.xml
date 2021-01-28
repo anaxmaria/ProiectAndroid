@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:id="@+id/drawer_layout"
+
+    tools:context=".Feedback">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/backgroundColor"
+        android:orientation="vertical"
+        android:id="@+id/feedbackLayout"
+        tools:context=".Feedback">
+        <include layout="@layout/header_menu"></include>
+        <TextView
+            android:id="@+id/tvFeedback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/tvFeedback"
+            android:textSize="20sp"
+            style="@style/TextStyle">
+
+        </TextView>
+
+        <RatingBar
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            ></RatingBar>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+                style="@style/ButtonStyle"
+                android:text="@string/btnSubmitFeedback"></Button>
+            <Button
+                android:id="@+id/btnRegasesteRecenzii"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/ButtonStyle"
+                android:layout_weight="1"
+                android:text="@string/btnRegasesteRecenzii" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:id="@+id/fragment_container">
+        </FrameLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_menu_principal"></include>
+    </RelativeLayout>
+</androidx.drawerlayout.widget.DrawerLayout>

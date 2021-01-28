@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="backgroundColor">#e6f3ff</color>
+    <color name="headerColor">#E0F2F1</color>
+    <color name="menu">#E0F2F1</color>
+    <color name="menuDarker">#bad6d5</color>
+    <color name="startScreen">#59b2ac</color>
+    <color name="row_par">#8CEAE5</color>
+    <color name="row_impar">#D1F5F3</color>
+    <color name="textColorStyle">#212121</color>
+    <color name="startScreenTitle">#0e524a</color>
+    <color name="buttonColor">#badedc</color>
+    <color name="backgroundColorDark">#017694</color>
+</resources>

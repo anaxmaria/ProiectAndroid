@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    android:background="@color/backgroundColor">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    tools:context=".Formular"
+    android:id="@+id/layoutFormular">
+
+    <TextView
+        android:id="@+id/tvTitlu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/titlu_formular"
+        android:textAlignment="center"
+        android:textSize="23dp"
+        android:textStyle="bold"
+        style="@style/TextStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutFormCamp1"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="monospace"
+            android:id="@+id/tvDenumireFactura"
+            android:text="@string/denumire_formular"
+            style="@style/TextStyle"></TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etDenumirefactura"
+            android:layout_weight="2"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutFormCamp2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="@string/furnizor_formular"
+            style="@style/TextStyle"></TextView>
+
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerFurnizori"
+            android:layout_weight="1"></Spinner>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutFormCamp3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/pret_formular"
+            style="@style/TextStyle"></TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:inputType="numberDecimal"
+            android:id="@+id/etPretFactura"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"></EditText>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutFormCamp4"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/moneda_formular"
+            style="@style/TextStyle"
+            ></TextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutFormCamp5"
+            android:orientation="horizontal">
+
+            <RadioGroup
+                android:id="@+id/RadioGroupMoneda"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/Moneda1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:layout_weight="1"
+                    android:text="@string/moneda1"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Moneda2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:layout_weight="1"
+                    android:text="@string/moneda2"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Moneda3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:layout_weight="1"
+                    android:text="@string/moneda3"></RadioButton>
+
+                <RadioButton
+                    android:id="@+id/Moneda4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="monospace"
+                    android:layout_weight="1"
+                    android:text="@string/moneda4"></RadioButton>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutFormCamp6"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/serie_formular"
+            style="@style/TextStyle"></TextView>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/etSerieFactura"
+            android:layout_weight="2"></EditText>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:id="@+id/layoutFormCamp10">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/layoutFormCamp7"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="222dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/data_formular_scadenta"
+                style="@style/TextStyle"></TextView>
+
+            <TextView
+                android:id="@+id/tvDataScadenta"
+                android:layout_width="245dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+            </TextView>
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnDataScadenta"
+            android:layout_width="wrap_content"
+            android:layout_height="36dp"
+            android:layout_gravity="center"
+            android:text="@string/btnDataScadenta"
+            style="@style/ButtonStyle">
+
+        </Button>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:id="@+id/layoutFormCamp8"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_formular"
+            style="@style/TextStyle"></TextView>
+
+        <RadioGroup
+            android:id="@+id/RadioGroupFormular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/Opt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/tip1"></RadioButton>
+
+            <RadioButton
+                android:id="@+id/Opt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="monospace"
+                android:text="@string/tip2"></RadioButton>
+
+        </RadioGroup>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutFormCamp9"
+        android:orientation="horizontal">
+    <Button
+        android:id="@+id/adaugaBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_weight="1"
+        android:text="@string/adaugaBtn"
+        style="@style/ButtonStyle">
+
+    </Button>
+
+    <Button
+        android:id="@+id/editareBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_weight="2"
+        style="@style/ButtonStyle"
+        android:text="@string/editareBtn" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_menu_principal"></include>
+    </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

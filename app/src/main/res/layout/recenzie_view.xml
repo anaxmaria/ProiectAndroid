@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/border"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="55dp"
+        android:id="@+id/imgUser"
+        android:src="@drawable/user"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/textRecenzie"
+        android:layout_marginTop="5dp"
+        android:inputType="textMultiLine"
+        android:textSize="15dp"
+        android:text="Mi a placut aceasta aplicatie,super tare tare tare aterrnrgigeigb45igb4i5bg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgUser"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+
+
+    <Button
+        android:layout_width="28dp"
+        android:layout_height="26dp"
+        android:id="@+id/like"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/like"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRecenzie">
+
+    </Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12/05/2020"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/textRecenzie"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/tvDataRecenzie">
+
+    </TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

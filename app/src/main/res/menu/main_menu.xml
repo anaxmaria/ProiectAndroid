@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/menuHome"
+            android:title="@string/home"
+            android:icon="@drawable/ic_baseline_home_24"></item>
+
+        <item android:id="@+id/menuIstoricFacturi"
+            android:title="@string/istoric_facturi"
+            android:icon="@drawable/ic_baseline_history_24"></item>
+
+
+        <item
+            android:id="@+id/menuAgenda"
+            android:icon="@drawable/ic_baseline_calendar_today_24"
+            android:title="@string/menuRaport"></item>
+
+
+        <item android:id="@+id/menuStatistici"
+            android:title="@string/menuStatistici"
+            android:icon="@drawable/statistici"></item>
+
+        <item android:id="@+id/menuSettings"
+            android:title="@string/menuSettings"
+            android:icon="@drawable/settings"></item>
+
+        <item android:id="@+id/menuFeedback"
+            android:title="@string/menuFeedback"
+            android:icon="@drawable/feedback"></item>
+
+    </group>
+</menu>

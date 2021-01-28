@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:background="@color/row_par"
+    android:id="@+id/linearLayoutViewAdapater"
+
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iconFurnizor"
+        android:layout_marginTop="10dp"
+        android:layout_width="25dp"
+        android:layout_marginRight="5dp"
+        android:layout_height="15dp"
+        android:layout_weight="1"
+        android:contentDescription="Nu exista poza"></ImageView>
+
+    <TextView
+        android:layout_width="95dp"
+        android:text="DenumireFactura"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:textSize="20sp"
+        android:id="@+id/tvAdapterDenumireFactura"
+        android:layout_height="wrap_content">
+    </TextView>
+    <TextView
+        android:layout_width="5dp"
+        android:id="@+id/tvPretAdapter"
+        android:layout_weight="1"
+        android:text="PRET"
+        android:layout_marginRight="8dp"
+        android:textSize="20sp"
+        android:layout_height="25dp">
+    </TextView>
+    <TextView
+
+        android:id="@+id/tvDataScadentaAdapater"
+        android:text="12/08/2020"
+        android:layout_weight="1"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="1dp"
+        android:layout_height="25dp"></TextView>
+</LinearLayout>

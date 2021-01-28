@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">ProiectAndroid</string>
+    <string name="splashScreenText">Jurnal de facturi</string>
+
+    <string name="listaFacturi">Lista facturilor naționale</string>
+    <string name="listaFacturiInt">Lista facturilor internaționale</string>
+
+    <string name="raport">Raport</string>
+
+    <string name="istoric_facturi">Istoric facturi</string>
+    <string name="btnIstoric">Istoric facturi</string>
+    <string name="btnRating">Evaluează-ne aplicația!</string>
+    <string name="btnStat">Statistici</string>
+
+    <string name="totalPay">Suma totala de plătit:</string>
+    <string name="pastPay">Suma facturilor deja plătite:</string>
+    <string name="salariu">Salariul lunar:</string>
+
+    <string name="setari">Setări</string>
+
+    <string name="titlu_formular">Formular introducere factură</string>
+    <string name="denumire_formular">Denumire factură</string>
+    <string name="furnizor_formular">Furnizor factură</string>
+    <string name="pret_formular">Preț factură</string>
+    <string name="serie_formular">Serie factură</string>
+    <string name="moneda_formular">Alegeți moneda de plată</string>
+    <string name="moneda1">RON</string>
+    <string name="moneda2">EUR</string>
+    <string name="moneda3">USD</string>
+    <string name="moneda4">GBP</string>
+    <string name="data_formular_emitere">Data emitere</string>
+    <string name="data_formular_scadenta">Data scadenta</string>
+    <string name="modalitate_formular">Modalitate plată</string>
+    <string name="tip_formular">Tip factură</string>
+    <string name="tip1">Tiparită</string>
+    <string name="tip2">Digitală</string>
+    <string-array name="itemsSpinner">
+        <item>Cash</item>
+        <item>Card</item>
+    </string-array>
+    <string name="adaugaBtn">Adaugă factură</string>
+    <string name="editareBtn">Editare factură</string>
+    <string name="toastFurnizori">Nu puteți modifica funizorul!</string>
+
+    <string name="contextMenu1">Modifică factură</string>
+    <string name="contextMenu2">Sterge factură</string>
+
+    <string name="tvFeedback">Evaluați această aplicație</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btnSubmitFeedback">Trimite Feedback</string>
+    <string name="tvFeedbackNegativ">Ne pare rău să auzim acest lucru!
+        Spune-ne cum ne-am putea îmbunătăți.</string>
+    <string name="hintSugestii">Introdu sugestiile tale</string>
+    <string name="tvFeedbackPozitiv">Ne bucurăm să auzim acest lucru!
+        Ai vrea să impărtășești cu noi ce ți-a plăcut cel mai mult la aplicația noastră?
+    </string>
+    <string name="btnIncarcaSugestii">Trimite sugestie</string>
+    <string name="btnDataEmitere">Selectează data emiterii</string>
+    <string name="btnDataScadenta">Selectează data scadentă</string>
+    <string name="menuRaport">Raport</string>
+    <string name="menuFormular">Adauga Factura</string>
+    <string name="menuFeedback">Feedback</string>
+    <string name="menuIstoricFacturi">Istoric Facturi</string>
+    <string name="home">Facturi Naționale</string>
+    <string name="menuStatistici">Statistici</string>
+    <string name="menuSettings">Setari</string>
+    <string name="menuFacturiInternationale">Facturi Internaționale</string>
+    <string name="titluAplicatie">Jurnal de facturi</string>
+    <string name="aspect">ASPECT</string>
+    <string name="alegeTema">Selectează tema dark</string>
+    <string name="alegeculoareText">Selectează culoarea textului</string>
+
+    <string name="toastFragmentFeedback">Nu ați completat câmpul de sugestii!</string>
+
+    <string name="fontSize">Selectează mărimea fontului</string>
+    <string-array name="fontSizes">
+        <item>12</item>
+        <item>14</item>
+        <item>16</item>
+    </string-array>
+    <string name="fontStyle">Selectează stilul fontului</string>
+    <string name="atiPlatitFactura">Ați plătit factura</string>
+    <string name="Date">DATE</string>
+    <string name="stergeListaFacturi">Goliți listele de facturi</string>
+    <string name="stergereBazaDeDate">Stergeți istoricul facturilor</string>
+    <string name="titluDialogComepletareCampuri">
+        Factura incompleta
+    </string>
+    <string name="titluDialogSerie">Serie incorecta</string>
+    <string name="mesajDialogComepletareCampuri">
+        Completati toate campurile pentru a introduce factura!
+    </string>
+    <string name="mesajDialogSerie">Seria unei facturi este unica!</string>
+    <string name="buttonOk">OK</string>
+    <string name="furnizor">Furnizor</string>
+    <string name="denumire">Denumire</string>
+    <string name="pret">Pret</string>
+    <string name="dataScadenta">Data scadentă</string>
+    <string name="rbCuloare1">NEGRU</string>
+    <string name="rbCuloare2">ALB</string>
+    <string name="rbCuloare3">GRI</string>
+    <string name="rbCuloare4">ROȘU</string>
+    <string name="rbFont1">Artifika</string>
+    <string name="rbFont2">Autour_One</string>
+    <string name="rbFont3">Petrona</string>
+    <string name="contextMenu3">Informatii furnizori</string>
+    <string name="OBS">Atenție! Prețul facturilor este afișat în RON!</string>
+    <string name="titluInfoFurnizor">Detalii Furnizor</string>
+    <string name="tvTelefon">Telefon</string>
+    <string name="infoTelefon">0242354657</string>
+    <string name="tvEmail">Email</string>
+    <string name="fax">Fax</string>
+    <string name="testFax">0251.411688</string>
+    <string name="adresa">ADRESA</string>
+    <string name="oras">Oras</string>
+    <string name="contact">Contact</string>
+    <string name="info_oras">Bucuresti</string>
+    <string name="codPostal">Cod Postal</string>
+    <string name="locatie">Locatie</string>
+    <string name="btnRegasesteRecenzii">Alte Recenzii</string>
+    <string name="dataEfectuarePlata">Data Achitare Factura</string>
+
+</resources>

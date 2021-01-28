@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".FramgentPozitiv">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollFragPozitiv"
+        android:layout_height="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundColor"
+    tools:context=".FramgentPozitiv"
+    android:id="@+id/fragmentPozitiv">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/happy" />
+
+
+    <TextView
+        android:id="@+id/tvFeedbackPozitiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        style="@style/TextStyle"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="@string/tvFeedbackPozitiv"
+        android:textAlignment="textStart"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/editTextPozitiv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:fontFamily="monospace"
+        android:hint="Introdu alte sugestii" />
+
+    <Button
+        android:id="@+id/btnTrimiteSugestii"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="10dp"
+        android:text="@string/btnIncarcaSugestii" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

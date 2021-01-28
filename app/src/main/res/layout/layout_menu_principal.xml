@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/menu"
+    android:orientation="vertical"
+    android:id="@+id/menuId">
+
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="46dp"
+        android:layout_gravity="left"
+        android:onClick="exitMenu"
+        android:src="@drawable/close">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:src="@drawable/start_image"></ImageView>
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:text="@string/titluAplicatie"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:textStyle="bold"></TextView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#636363">
+    </View>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/optiuniMenu">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="5dp"
+                android:onClick="clickHome"
+                android:orientation="horizontal"
+                android:id="@+id/optiuniMenu1">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/home"
+                    android:textSize="20dp"></TextView>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="48dp"
+                    android:src="@drawable/ic_baseline_home_24">
+
+                </ImageView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickInternational"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/optiuniMenu2">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/menuFacturiInternationale"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="48dp"
+                    android:src="@drawable/ic_baseline_list_alt_24">
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickIstoric"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/optiuniMenu3">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/menuIstoricFacturi"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="48dp"
+                    android:src="@drawable/ic_baseline_history_24">
+
+                </ImageView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickAgenda"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/optiuniMenu4">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/menuRaport"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="48dp"
+                    android:src="@drawable/ic_baseline_assignment_24">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickStatistici"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/optiuniMenu5">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/menuStatistici"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="48dp"
+                    android:src="@drawable/statistici">
+
+                </ImageView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:onClick="clickSettings"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:id="@+id/optiuniMenu6">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/menuSettings"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="48dp"
+                    android:src="@drawable/ic_baseline_settings_24">
+
+                </ImageView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:onClick="clickFeedback"
+                android:orientation="horizontal"
+                android:id="@+id/optiuniMenu7">
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="@string/menuFeedback"
+                    android:textSize="20dp">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="48dp"
+                    android:src="@drawable/feedback"></ImageView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

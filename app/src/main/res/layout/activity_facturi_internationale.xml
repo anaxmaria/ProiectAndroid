@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+
+    android:background="@color/backgroundColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <include layout="@layout/header_menu"></include>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/toolbal"
+            android:background="@color/backgroundColor">
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                tools:context=".MainActivity">
+
+                <TextView
+                    android:id="@+id/textViewTitlu"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="2dp"
+                    android:text="@string/listaFacturiInt"
+                    android:textAlignment="center"
+                    android:textSize="25sp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginLeft="2dp"
+
+                    android:layout_marginBottom="5dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/furnizor"
+                        android:textSize="15dp"
+
+
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/denumire"
+                        android:layout_marginLeft="-20dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/pret"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_height="wrap_content">
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/dataScadenta"
+                        android:layout_weight="1"
+
+                        android:layout_height="wrap_content">
+                    </TextView>
+
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:background="@color/colorAccent"
+                    android:layout_height="2dp">
+                </View>
+                <ListView
+                    android:id="@+id/lvFacturiInternationale"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:layout_marginTop="15dp" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/adaugaFacturaIntBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:backgroundTint="#43C4D5"
+                    app:fabSize="auto"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:maxImageSize="35dp"
+                    app:srcCompat="@android:drawable/ic_menu_add" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <TextView
+                    android:id="@+id/tvObservatie"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="10px"
+                    android:gravity="center"
+                    android:text="@string/OBS"
+                    android:textColor="#A8ABAB"
+                    android:textSize="20sp"></TextView>
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_gravity="start"
+        android:background="@android:color/white"
+        android:layout_height="match_parent">
+        <include layout="@layout/layout_menu_principal"></include>
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

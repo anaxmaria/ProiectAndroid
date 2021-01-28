@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    app:barrierMargin="@dimen/activity_vertical_margin"
+    tools:context=".FragmentNegativ">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/scrollFragNegativ"
+        android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/backgroundColor"
+            android:orientation="vertical"
+            tools:context=".FragmentNegativ"
+            android:id="@+id/fragmentNegativ">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/negativ"
+                android:src="@drawable/sadface" />
+
+            <TextView
+                android:id="@+id/tvfeedbackNegativ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                style="@style/TextStyle"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+
+                android:text="@string/tvFeedbackNegativ"
+                android:textAlignment="viewStart"
+                android:textSize="18sp">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/editTextNegativ"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:gravity="start|top"
+                android:hint="@string/hintSugestii"
+                android:inputType="textMultiLine" />
+
+            <Button
+                android:id="@+id/btnTrimiteSugestii"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                style="@style/ButtonStyle"
+                android:layout_marginBottom="10dp"
+                android:text="@string/btnIncarcaSugestii" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
